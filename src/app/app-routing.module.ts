@@ -9,7 +9,7 @@ import { ShopComponent } from './shop/shop.component'
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: SplashComponent },
-  // { path: '/about', component: AboutComponent },
+  { path: 'about', component: AboutComponent },
   // { path: '/shop', component: ShopComponent },
   // { path: '/admin', component: AdminComponent }
 
