@@ -23,4 +23,10 @@ export class ShopComponent implements OnInit {
       .subscribe(products => this.products = products)
   }
 
+  delete(product: Product): void {
+    this.products = this.products.filter(p => p !== product)
+    alert(`Deleted product ${product.id}`)
+    this.dataService.deleteProduct(product).subscribe()
+  }
+
 }

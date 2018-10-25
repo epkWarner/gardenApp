@@ -11,6 +11,12 @@ const httpOptions = {
     "Content-Type": "application/json"
   })
 }
+const httpAuthOptions = {
+  headers: new HttpHeaders({
+    "Content-Type": "application/json",
+    Authorization: localStorage.getItem('sessionToken')
+  })
+}
 
 @Injectable({
   providedIn: 'root'
@@ -45,7 +51,7 @@ export class DataService {
     const id = typeof product === 'number' ? product : product.id
     const url = `${this.deleteUrl}/${id}`
 
-    return this.http.delete<Product>(url, httpOptions).pipe(
+    return this.http.delete<Product>(url, httpAuthOptions).pipe(
       tap(_ => console.log(`Deleted product id: ${id}`)),
       catchError(this.handleError<Product>('deleteProduct'))
     )
@@ -53,7 +59,7 @@ export class DataService {
 
   login(email: string, password: string): Observable<any> {
     return this.http.post<any>(this.authUrl, { email, password }).pipe(
-      tap(_ => console.log('Logged in')),
+      tap(_ => localStorage.setItem('sessionToken', _.token)),
       catchError(this.handleError<any>('login '))
     )
   }
