@@ -1,0 +1,66 @@
+<div class='about'>
+  <h1>About US</h1>
+  <p class='about-text'>Aenean est dolor, malesuada non ullamcorper in, accumsan et mi. Donec at eleifend leo, hendrerit tincidunt sem. Suspendisse mattis massa eu lacus iaculis, quis aliquam elit lacinia. Aenean placerat porta congue. Proin auctor tortor velit, a mollis mi laoreet eu. Nam tortor dolor, ultrices sit amet pharetra ac, placerat eu velit. Curabitur imperdiet mollis ullamcorper. Vestibulum tincidunt augue ex, ac pharetra ex ornare eget. Pellentesque hendrerit, enim eget volutpat posuere, libero orci porttitor erat, vel imperdiet ex felis a nisl. Proin ac odio id dui efficitur eleifend. Suspendisse vel libero quam.
+
+    Donec iaculis justo ipsum, at ullamcorper est tristique ac. Aliquam sollicitudin erat eu leo malesuada, quis viverra neque mattis. Sed interdum quis ante et porttitor. Vivamus vitae erat placerat, placerat tortor ut, convallis leo. Etiam consequat porttitor erat, ac iaculis velit vehicula id. Quisque scelerisque volutpat eros non imperdiet. Nam nec nisl quis nulla auctor suscipit. Curabitur tempor vel massa ut eleifend. Proin quis pharetra nisi. Donec congue, velit vitae finibus mattis, orci lacus molestie felis, finibus tempor dolor erat non risus. Proin lacus velit, tempus ut egestas sit amet, pharetra eleifend ipsum. Nullam lobortis, lorem sed efficitur laoreet, ante metus ultrices leo, et lacinia mi arcu a tellus. Curabitur vitae accumsan sem, eget porttitor elit. Nullam dictum a sem in auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+<section id="contact" class="bottom">
+    <div class="container">
+      <h2 class="text-center text-uppercase">Contact Me</h2>
+      <div class="row">
+        <form action="https://formspree.io/quentinbcarlin@gmail.com" method="POST" class="contact">
+          <div class="control-group">
+            <div class="form-group">
+              <label>Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Name"
+                id="name"
+                required
+                data-validation-required-message="Please enter your name"
+                name="name"
+                >
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+                id="email"
+                required
+                data-validation-required-message="Please enter your email here"
+                name="_replyto"
+              >
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                rows="7"
+                placeholder="Your Message"
+                id="message"
+                required
+                data-validation-required-message="Please leave a message"
+                name="message"
+              ></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="text-center">
+            <div id="success"></div>
+            <button type="submit" class="btn btn-lg btn-black">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>

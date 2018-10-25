@@ -1,0 +1,12 @@
+.banner {
+    position: fixed;
+    margin-left: 14vw; 
+    background-image: url('https://images.pexels.com/photos/132727/flower-meadow-wildflowers-meadow-spring-132727.jpeg?cs=srgb&dl=bloom-blooming-blossom-132727.jpg&fm=jpg');
+    height: 20vh;
+    width: 85vw;
+    background-size: 100%;
+}
+.logo {
+    height: 250px;
+    margin-top: -10px;
+}
