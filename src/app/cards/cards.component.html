@@ -1,0 +1,9 @@
+<div *ngIf="_card" class="card" id="{{_card.id}}">
+  <img src="#" alt="{{_card.product_image}}">
+  <div class="container">
+    <h4><b>{{_card.product_name | uppercase }}</b></h4>
+    <h5>Price: {{_card.product_price | currency}}</h5>
+    <hr>
+    <p>{{_card.product_description}}</p>
+  </div>
+</div>

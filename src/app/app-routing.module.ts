@@ -10,8 +10,14 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: SplashComponent },
   { path: 'about', component: AboutComponent },
+<<<<<<< HEAD
+  { path: 'shop', component: ShopComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'login', component: LoginComponent }
+=======
   // { path: '/shop', component: ShopComponent },
   // { path: '/admin', component: AdminComponent }
+>>>>>>> 840191af2606fa3a087794bbcbb11e9dd5dbccf3
 
 ];
 
