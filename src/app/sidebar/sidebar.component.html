@@ -1,17 +1,20 @@
 <div class="sidebar">
-  <a routerLink="home">
+  <a routerLink="home" [class.activated]="currentUrl == '/'">
     <i class="material-icons">home</i>
   </a>
-  <a routerLink="shop">
+  <a routerLink="shop" [class.activated]="currentUrl == '/shop'">
     <i class="material-icons">shopping_cart</i>
   </a>
-  <a routerLink="about">
+  <a routerLink="about" [class.activated]="currentUrl == '/about'">
     <i class="material-icons">info</i>
   </a>
-  <a routerLink="login">
-      <i class="material-icons">login</i>
-    </a>
+  <a routerLink="login" [class.activate]="currentUrl == '/login'">
+    <i class="material-icons">login</i>
+  </a>
 </div>
-<!-- [class.activated]="currentUrl == '/'"
-[class.activated]="currentUrl == '/about'"
-[class.activated]="currentUrl == '/products'" -->
+<!-- { path: '', redirectTo: '/home', pathMatch: 'full' },
+{ path: 'home', component: SplashComponent },
+{ path: 'about', component: AboutComponent },
+{ path: 'shop', component: ShopComponent },
+{ path: 'admin', component: AdminComponent },
+{ path: 'login', component: LoginComponent } -->
