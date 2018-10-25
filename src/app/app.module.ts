@@ -11,7 +11,8 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './sidebar/sidebar.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms'
     ShopComponent,
     AdminComponent,
     LoginComponent,
-    CardsComponent
+    CardsComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
