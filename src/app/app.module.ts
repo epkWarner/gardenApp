@@ -12,7 +12,9 @@ import { LoginComponent } from './login/login.component';
 import { CardsComponent } from './cards/cards.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { SidebarComponent } from './sidebar/sidebar.component'
+import { SidebarComponent } from './sidebar/sidebar.component';
+
+
 
 @NgModule({
   declarations: [
