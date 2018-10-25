@@ -1,6 +1,7 @@
 #grid{
     display: grid;
-    grid-template-columns: repeat(3,0fr)
+    grid-template-columns: repeat(3,0fr);
+    margin-left: 200px;
 }
 #shop{
     padding: 1vw;
@@ -8,5 +9,6 @@
 }
 h1{
     color: green;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, .6)
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .6);
+    margin-left: 200px;
 }
