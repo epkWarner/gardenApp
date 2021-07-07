@@ -1,17 +1,18 @@
 #grid {
-    display: grid;
-    grid-template-columns: repeat(3, 0fr);
-    margin-left: 200px;
-  }
-  #delete {
-    padding: 1vw;
-    background-color: ivory;
-  }
-  h1 {
-    color: green;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
-    margin-left: 200px;
-  }
-  /* .delete-entry {
-    
-  } */
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  margin-left: 200px;
+}
+#delete {
+  padding: 1vw;
+  background-color: ivory;
+}
+h1 {
+  color: green;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+  margin-left: 200px;
+}
+
+.delete-entry {
+  text-align: center;
+}
